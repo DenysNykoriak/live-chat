@@ -1,0 +1,217 @@
+$title_color: #105177;
+$title_size: 20px;
+$subtitle_color: #235570;
+$subtitle_size: 14px;
+
+.wrapper {
+    display: flex;
+
+    background-color: #28546C;
+    border-radius: 10px;
+    overflow: hidden;
+
+    min-height: 400px;
+
+
+    & > .aside {
+        padding: 20px;
+        background-color: #5e96b4;
+    }
+
+    & > .main {
+        padding: 20px;
+        background-color: #306d8d;
+    }
+}
+
+.aside {
+    &__room-title {
+        color: $title_color;
+        font-size: $title_size;
+    }
+
+    &__room-id {
+        color: $subtitle_color;
+        font-size: $subtitle_size;
+    }
+
+    &__members-title {
+        color: $title_color;
+        font-size: $title_size;
+    }
+
+    &__member-span {
+        color: $subtitle_color;
+        font-size: $subtitle_size;
+    }
+}
+
+.main {
+
+    //Join
+
+    &__title {
+        color: #093047;
+        font-size: 26px;
+    }
+
+    &-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        // Input
+        &__input-container {
+            border: 3px solid #50a7d6;
+            background-color: #4989ac;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            padding: 0 5px;
+        }
+
+        &__label {
+            color: #114968;
+            font-size: 17px;
+            font-weight: 600;
+            padding-top: 5px;
+        }
+
+        &__input {
+            padding: 10px 0;
+            background-color: transparent;
+            outline: 0;
+            border: 0;
+            font-size: 15px;
+            font-weight: 600;
+            color: #093047;
+        }
+
+        &__send-button {
+            width: 80%;
+            padding: 5px 0;
+            background-color: #5e96b4;
+            border: 0;
+            font-size: 15px;
+            font-weight: 600;
+            color: #093047;
+            border-radius: 10px;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:active {
+                background-color: #62c8ff;
+            }
+        }
+    }
+
+    //Room
+
+    &__chat-zone {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 5px;
+
+        height: 400px;
+        max-width: 350px;
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+            width: 15px;
+            background-color: #3f91bd;
+
+            border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            width: 15px;
+            background-color: #00263b;
+
+            border-radius: 10px;
+        }
+    }
+
+    &__send-form {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__send-input-div {
+        border: 3px solid #50a7d6;
+        background-color: #4989ac;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        padding: 0 5px;
+    }
+
+    &__send-label {
+        color: #114968;
+        font-size: 17px;
+        font-weight: 600;
+        padding-top: 5px;
+    }
+
+    &__send-input {
+        padding: 10px 0;
+        background-color: transparent;
+        outline: 0;
+        border: 0;
+        font-size: 15px;
+        font-weight: 600;
+        color: #093047;
+    }
+
+    &__send-button {
+        width: 80%;
+            padding: 5px 0;
+            background-color: #5e96b4;
+            border: 0;
+            font-size: 15px;
+            font-weight: 600;
+            color: #093047;
+            border-radius: 10px;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:active {
+                background-color: #62c8ff;
+            }
+    }
+
+}
+
+.message {
+    border: 1px solid #3f91bd;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: 5px;
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__author {
+        color: #5e96b4;
+    }
+
+    &__date {
+        color: #5e96b4;
+        font-size: 12px;
+    }
+
+    &__span {
+        color: #073955;
+        word-wrap: break-word;
+    }
+}

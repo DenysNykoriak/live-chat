@@ -1,0 +1,31 @@
+{
+  "include": [
+    "./src/**/*"
+  ],
+  "ts-node": {
+    "files": true
+  },
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+
+    "resolveJsonModule": true,
+    "sourceMap": true,
+
+    "jsx": "react",
+
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    "allowJs": true,
+
+    "declaration": true,
+    "declarationMap": true
+  }
+}

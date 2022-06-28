@@ -1,0 +1,32 @@
+.alert {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    transition: right .5s;
+
+    margin: 10px 10px;
+    padding: 15px 10px;
+
+    font-size: 18px;
+    color: #644300;
+
+    background-color: #D4B16A;
+    border-radius: 10px;
+
+    &.entering {
+        right: -100%;
+    }
+
+    &.entered {
+        right: 0px;
+    }
+
+    &.exiting {
+        right: 0px;
+    }
+
+    &.exited {
+        right: -100%;
+    }
+}
